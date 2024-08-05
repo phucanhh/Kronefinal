@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Krone</title>
+    <link rel="stylesheet" href="./shopping-cart.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+   
+     <link rel="shortcut icon" href="/logo.png" type="image/x-icon">
+  </head>
+
+
+  <body>
+    <label for=""><a style="color: limegreen" href="../HOME/home.html"><strong>Quay về Trang chủ
+      <i class="fa-solid fa-right-long"></i></strong></a></label>
+      
+    <div class="container">
+      <div class="menu">
+        <div style="text-align: center" class="shopping-cart-logo">
+          <span style="font-size: 30px">Krone</span>
+          Organisation
+        </div>
+        <ul>
+          <li class="active">
+            <a style="color: green" href=""
+              ><i class="fa-solid fa-house"></i> Trang chủ</a
+            >
+          </li>
+          <li>
+            <a href=""><i class="fa-solid fa-user"></i> Người dùng</a>
+          </li>
+          <li>
+            <a href=""><i class="fa-solid fa-heart"></i> Mục yêu thích</a>
+          </li>
+        </ul>
+        <ul class="social_icon">
+          <li>
+            <a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-linkedin"></i> Linkedin</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-discord"> </i>Discord</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-twitter"> </i>Twitter</a>
+          </li>
+        </ul>
+      </div>
+      <!------------------------ Center --------------------->
+      <div class="center">
+        <div class="search">
+          <div class="form">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Tìm kiếm..." class="search-input" />
+            <button>Tìm kiếm</button>
+          </div>
+        </div>
+        <!-- marquee -->
+        <marquee
+          direction="left"
+          style="
+            background: #ccc;
+            padding: 7px;
+            margin: 10px 0;
+            animation-duration: 4s loop;
+            font-size: x-large;
+          "
+        >
+          <span  style="color: green; font-family: 'Lobster',cursive; ">Best tree</span> <span  style="font-family: 'Lobster',cursive; ">- Best service|</span> 
+          <strong style=" font-family: 'Lobster',cursive;">Always give the best</strong>
+        </marquee>
+
+        <!-- product -->
+        <h2>Sản phẩm</h2>
+        <div class="list">
+          <div class="item" data-key="1">
+            <div class="img">
+              <img src="../shop.github.io/image/product1/mangtay.jpg" alt="" />
+            </div>
+            <div class="content">
+              <div class="title">
+                <a
+                  style="text-decoration: none; color: #000"
+                  href="../shop.github.io/product/product.html"
+                  >Cây măng tây</a
+                >
+              </div>
+              <div class="prive">xxx.000 vnđ</div>
+              <input type="number" class="count" value="1" min="1" />
+              <button class="add">Thêm vào giỏ</button>
+              <button class="remove" onclick="Remove(1)">
+                <i class="fa-solid fa-trash-can"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="item" data-key="2">
+            <div class="img">
+              <img src="../shop.github.io/image/product2/cayquat.jpg" alt="" />
+            </div>
+            <div class="content">
+              <a
+                style="text-decoration: none; color: #000"
+                href="../shop.github.io/product/product2.html"
+                >Cây Quất</a
+              >
+              <div class="prive">xxx.000 vnđ</div>
+              <input type="number" class="count" value="1" min="1" />
+              <button class="add">Thêm vào giỏ</button>
+              <button class="remove" onclick="Remove(2)">
+                <i class="fa-solid fa-trash-can"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="item" data-key="3">
+            <div class="img">
+              <img src="../shop.github.io/image/product3/cmx.png" alt="" />
+            </div>
+            <div class="content">
+              <a
+                style="text-decoration: none; color: #000"
+                href="../shop.github.io/product/product3.html"
+                >Hoa cúc mâm xôi</a
+              >
+              <div class="prive">xxx.000 vnđ</div>
+              <input type="number" class="count" value="1" min="1" />
+              <button class="add">Thêm vào giỏ</button>
+              <button class="remove" onclick="Remove(3)">
+                <i class="fa-solid fa-trash-can"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="item" data-key="4">
+            <div class="img">
+              <img src="../shop.github.io/image/product4/tq.jpg" alt="" />
+            </div>
+            <div class="content">
+              <a
+                style="text-decoration: none; color: #000"
+                href="../shop.github.io/product/product4.html"
+                >Hoa cúc tứ quý</a
+              >
+              <div class="prive">xxx.000 vnđ</div>
+              <input type="number" class="count" value="1" min="1" />
+              <button class="add">Thêm vào giỏ</button>
+              <button class="remove" onclick="Remove(4)">
+                <i class="fa-solid fa-trash-can"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="item" data-key="5">
+            <div class="img">
+              <img
+                style="width: 70px"
+                src="../shop.github.io/image/product5/dht.jpg"
+                alt=""
+              />
+            </div>
+            <div class="content">
+              <a
+                style="text-decoration: none; color: #000"
+                href="../shop.github.io/product/product5.html"
+                >Cây đàn hương trắng
+              </a>
+              <div class="prive">xxx.000 vnđ</div>
+              <input type="number" class="count" value="1" min="1" />
+              <button class="add">Thêm vào giỏ</button>
+              <button class="remove" onclick="Remove(5)">
+                <i class="fa-solid fa-trash-can"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="item" data-key="6">
+            <div class="img">
+              <img src="../shop.github.io/image/product6/suado.jpg" alt="" />
+            </div>
+            <div class="content">
+              <a
+                style="text-decoration: none; color: #000"
+                href="../shop.github.io/product/product6.html"
+                >Cây sưa đỏ
+              </a>
+              <div class="prive">xxx.000 vnđ</div>
+              <input type="number" class="count" value="1" min="1" />
+              <button class="add">Thêm vào giỏ</button>
+              <button class="remove" onclick="Remove(6)">
+                <i class="fa-solid fa-trash-can"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- <div class="" id="567">
+            <div class="item" data-key="8">
+            <div class="img">
+              <img src="../shop.github.io/image/product8/golim.jpg" alt="" />
+            </div>
+            <div class="content">
+              <a
+                style="text-decoration: none; color: #000"
+                href="../shop.github.io/product/product8.html"
+                >Cây gỗ lim
+                </a
+              >
+              <div class="prive">xxx.000 vnđ</div>
+              <input type="number" class="count" value="1" min="1" />
+              <button class="add">Thêm vào giỏ</button>
+              <button class="remove" onclick="Remove(8)">
+                <i class="fa-solid fa-trash-can"></i>
+              </button>
+            </div>
+
+            
+        </div>
+<div class="item" data-key="9">
+            <div class="img">
+              <img src="../shop.github.io/image/product9/tuivai.jpg" alt="" />
+            </div>
+            <div class="content">
+              <a
+                style="text-decoration: none; color: #000"
+                href="../shop.github.io/product/product9.html"
+                >Túi vải</a
+              >
+              <div class="prive">xxx.000 vnđ</div>
+              <input type="number" class="count" value="1" min="1" />
+              <button class="add">Thêm vào giỏ</button>
+              <button class="remove" onclick="Remove(9)">
+                <i class="fa-solid fa-trash-can"></i>
+              </button>
+            </div>
+          </div>
+
+            <div class="item" data-key="7">
+            <div class="img">
+              <img src="../shop.github.io/image/product7/tramhuong.jpg" alt="" />
+            </div>
+            <div class="content">
+              <a
+                style="text-decoration: none; color: #000"
+                href="../shop.github.io/product/product7.html"
+                >Cây trầm hương
+                </a
+              >
+              <div class="prive">xxx.000 vnđ</div>
+              <input type="number" class="count" value="1" min="1" />
+              <button class="add">Thêm vào giỏ</button>
+              <button class="remove" onclick="Remove(7)">
+                <i class="fa-solid fa-trash-can"></i>
+              </button>
+            </div>
+          </div>
+          
+
+          
+      </div> -->
+          
+      </div>
+        <div class="shop-pagination-container">
+          <div class="shop-pagination">
+            <button class="btn1" onclick="prevBtn()"><i class="fa-solid fa-arrow-left"></i></button>
+            <ul>
+              <li class="link active" value="1" onclick="activeLink()"><a href="">1</a></li>
+              <li class="link" value="2" onclick="activeLink()"><a href="">2</a></li>
+              <li class="link" value="3" onclick="activeLink()"><a href="#567">3</a></li>
+            </ul>
+            <button class="btn2" onclick="nextBtn()">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+     </div>
+
+
+      </div>
+      <div class="cart">
+        <div class="name">Giỏ hàng</div>
+        <div class="listCart"></div>
+        <div class="thanh-toan">
+          <button>Thanh toán</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./shopping-cart.js"></script>
+  </body>
+</html>
